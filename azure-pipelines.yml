@@ -30,6 +30,6 @@ stages:
               orchestratorConnection: 'UiPathConnection'
               packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
               createProcess: false
-              folderName: '$(Folder)'
+              folderName: $(Folder)
           
           
