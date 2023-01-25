@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+variables:
+  -group: DEV
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: Build_Package
+    displayName: Build Package
+    jobs:
+      - job: Build_Package
+        displayName: Build Package
+        pool:
+          vmImage: ''
+        steps:
+          - task: UiPathPack@2
+            inputs:
+              versionType: 'AutoVersion'
+              projectJsonPath: '$(Build.SourcesDirectory)\project.json'
+              orchestratorConnection: 'UiPathConnection'
+              outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+              runWorkflowAnalysis: true
