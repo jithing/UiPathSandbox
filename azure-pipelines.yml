@@ -19,7 +19,7 @@ stages:
       - job: Build_Package
         displayName: Build Package
         pool:
-          vmImage: 'LAPTOP-1E52S3EV'
+          pool: 'LAPTOP-1E52S3EV'
         steps:
           - task: UiPathPack@2
             inputs:
