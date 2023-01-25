@@ -19,7 +19,7 @@ stages:
       - job: Build_Package
         displayName: Build Package
         pool:
-          pool: 'LAPTOP-1E52S3EV'
+          name: Default
         steps:
           - task: UiPathPack@2
             inputs:
