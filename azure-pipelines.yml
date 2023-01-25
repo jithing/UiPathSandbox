@@ -23,4 +23,4 @@ stages:
               projectJsonPath: '$(Build.SourcesDirectory)\project.json'
               orchestratorConnection: 'UiPathConnection'
               outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-              runWorkflowAnalysis: true
+              #runWorkflowAnalysis: true
