@@ -5,15 +5,11 @@
 
 trigger:
 - main
-
 variables:
   -group: DEV
 
-pool:
-  vmImage: ubuntu-latest
-
 stages:
-  - stage: Build_Package
+  - stage: Build
     displayName: Build Package
     jobs:
       - job: Build_Package
