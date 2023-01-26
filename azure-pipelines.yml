@@ -8,6 +8,7 @@
 variables:
   -group: DEV
 
+
 stages:
   - stage: Build
     displayName: Build Package
@@ -31,5 +32,3 @@ stages:
               packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
               createProcess: false
               folderName: $(Folder)
-          
-          
