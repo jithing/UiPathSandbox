@@ -28,3 +28,9 @@ stages:
               orchestratorConnection: 'UiPathConnection'
               outputPath: '$(Build.ArtifactStagingDirectory)\Output'
               runWorkflowAnalysis: true
+
+          - task: UiPathDeploy@3
+            inputs:
+              orchestratorConnection: 'UiPathConnection'
+              packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+              folderName: 'Work'
