@@ -66,6 +66,6 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message 1" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;This is log 1&quot;]" />
     <ui:LogMessage DisplayName="Log Message 2" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;This is log 2&quot;]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;This is log 3&quot;]" />
+    <ui:LogMessage DisplayName="Log Message 3" sap:VirtualizedContainerService.HintSize="358,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;This is log 3&quot;]" />
   </Sequence>
 </Activity>
